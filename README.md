@@ -36,37 +36,55 @@ This project implements an automated system to detect and count gas cylinders fr
 
 ## How to Run
 
-### 1. Install Dependencies
+### 1. Open Google Colab
+Go to: https://colab.research.google.com/
+- Upload the provided .ipynb file to Google Colab
+- Open it
 
+### 2. Install Dependencies
 pip install opencv-python numpy
 
-### 2. Place Video
-Put your input video at:/content/Task.mp4
+### 3. Upload Input Video (Drag & Drop)
+Task.mp4
 
-### 3. Run Script
-Put your input video at:/content/Task.mp4
-python cylinder_count.py
+### 4. Run All Cells
+- Click Runtime → Run all
+- The notebook will:
+    - Process the video
+    - Detect and count cylinders
+    - Identify trucks
+    - Generate annotated output
 
+### 5. Output Files Generated
+After execution, these files will be created:
+| File Name          | Description                             |
+| ------------------ | --------------------------------------- |
+| `output.mp4`       | Annotated video with detected cylinders |
+| `truck_counts.csv` | Final cylinder count per truck          |
+| `frame_log.csv`    | Frame-wise detection log                |
+
+
+### 6. Download Output Files
 ---
+### Expected Output
 
-## Output Files
-| File               | Description              |
-| ------------------ | ------------------------ |
-| `output.mp4`       | Annotated video          |
-| `truck_counts.csv` | Final count per truck    |
-| `frame_log.csv`    | Frame-wise detection log |
+- Total cylinder count per truck
+- Annotated video showing:
+    - Detected cylinders (green circles)
+    - Stable counting per truck
+    - CSV report with final counts
 
 ---
 
 ## Evaluation Metrics
 
-### MAE (Mean Absolute Error)
+MAE (Mean Absolute Error)
 
-### MAPE (Mean Absolute Percentage Error)
+MAPE (Mean Absolute Percentage Error)
 
-### Counting Accuracy
+Counting Accuracy
 
-### Stability Score (Standard Deviation)
+Stability Score (Standard Deviation)
 
 ---
 
