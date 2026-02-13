@@ -65,9 +65,8 @@ After execution, these files will be created:
 
 
 ### 6. Download Output Files
----
-### Expected Output
 
+## Expected Output
 - Total cylinder count per truck
 - Annotated video showing:
     - Detected cylinders (green circles)
